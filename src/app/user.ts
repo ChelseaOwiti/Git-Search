@@ -14,6 +14,6 @@ export class User {
     public public_gists:string,
     public followers:number,
     public following:number,
-    public created_at:any,
+    public created_at:string,
   ){}
 }
