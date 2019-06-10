@@ -1,25 +1,26 @@
 # GitSearch
 
-####Git-Search Application, June 10th, 2019
-####By **Chelsea Owiti**
+####  Git-Search Application, June 10th, 2019
+####  By **Chelsea Owiti**
 
-##Description
+## Description
 An application that enables users to look up their GitHub profiles and view their repositories
 
-##Technologies Used
+## Technologies Used
 *Angular CLI
 
-#Behaviour Driven Development
+# Behaviour Driven Development
 User Inputs GitHub username and application outputs profile details and repositories
  
- ##Known Bugs
+ ## Known Bugs
  Repositories might not display
 
- ##Support and Contatct Details
+ ## Support and Contatct Details
 chelseaowiti@gmail.com
 
 ## Further help
+Visit the Angular Documentation
 
-##LICENSE
+## LICENSE
 * [MIT LICENSE](LICENSE)
 
