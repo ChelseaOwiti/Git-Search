@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {environment} from '../environments/environment'
 
 
 @Component({
@@ -8,7 +7,5 @@ import {environment} from '../environments/environment'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  production : string = environment.key;
- 
   title = 'Git-Search';
 }
