@@ -49,10 +49,10 @@
     <div class="card col-md-8">
       <h4 class="card-header text-center"><b>Repositories</b></h4>
       <div class="card-body">
-        <div class="jumbotron" *ngFor='let repo of repo'>
+        <div class="jumbotron" *ngFor='let repo of repos'>
           <p>{{repo.name}}</p>
 
-          <h4 class="btn btn-dark"><a href="{{repo.html_url}} ">VIEW GIT</a></h4>
+          <h4 class="btn btn-dark"><a href="{{repo.html_url}} ">VIEW REPO</a></h4>
           <p> Description: {{repo.description}}</p>
 
 

@@ -16,7 +16,7 @@ export class LandpageComponent implements OnInit {
   
 
   data:any;
-  repo:any;
+  repos:any;
   username:string;
 
   
@@ -30,8 +30,8 @@ export class LandpageComponent implements OnInit {
       this.data= data;
     });
     this.gitserviceservice.getRepo('ChelseaOwiti').subscribe(repo =>{
-      this.repo= repo;
-      
+      this.repos= repo;
+      console.log(this.repos);
     });
   }
 
@@ -42,11 +42,11 @@ export class LandpageComponent implements OnInit {
       this.data = User;
 
     });
-    this.gitserviceservice.getRepo("").subscribe(repo =>{
+    this.gitserviceservice.getRepo("").subscribe(Repo =>{
       console.log(Repo);
-      this.repo = repo;
+      this.repos = Repo;
 
-    })
+    });
   }
   
 
