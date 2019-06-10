@@ -17,10 +17,10 @@ export class GitserviceService {
    }
   //getting github data
   getUser(username){
-    return this.http.get<User>(environment.apiUrl + this.username + "?access_token=" + environment.key);
+    return this.http.get<User>( "https://api.github.com/users/" + this.username + "?access_token=" + '6da7d12bfd64b068d6056161f5fcd87c80ea9d2a');
   }
   getRepo(username){
-    return this.http.get<Repo>(environment.apiUrl + this.username + '/repos' + "?access_token=" + environment.key)
+    return this.http.get<Repo>("https://api.github.com/users/" + this.username + '/repos' + "?access_token=" + '6da7d12bfd64b068d6056161f5fcd87c80ea9d2a')
   }
   updateProfile(username:string){
     this.username = username;
