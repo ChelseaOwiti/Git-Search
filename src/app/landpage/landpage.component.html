@@ -34,6 +34,8 @@
         <li class="list-group-item"><strong>Repository: </strong>{{data.public_repos}}</li>
         <li class="list-group-item"><strong>Followers: </strong> {{data.followers}}</li>
         <li class="list-group-item"><strong>Following: </strong> {{data.following}}</li>
+        
+
 
       </ul>
 
@@ -47,17 +49,15 @@
     <div class="card col-md-8">
       <h4 class="card-header text-center"><b>Repositories</b></h4>
       <div class="card-body">
-          <div class="jumbotron" *ngFor='let repo of repos'>
-          
-              <h4 > <a href="{{repo.html_url}} " target="_blank">{{repo.name}} 
-  
-                </a>
-              </h4>
-              <p> Description: {{repo.description}}</p> 
-             
-              
-              <hr>
-            </div>
+        <div class="jumbotron" *ngFor='let repo of repo'>
+          <p>{{repo.name}}</p>
+
+          <h4 class="btn btn-dark"><a href="{{repo.html_url}} ">VIEW GIT</a></h4>
+          <p> Description: {{repo.description}}</p>
+
+
+          <hr>
+        </div>
 
       </div>
 

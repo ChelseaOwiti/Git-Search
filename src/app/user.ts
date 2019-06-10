@@ -6,6 +6,7 @@ export class User {
     public gists_url:string,
     public login:string,
     public name:string,
+    public repos_url: string,
     public company:string,
     public blog:string,
     public location:string,

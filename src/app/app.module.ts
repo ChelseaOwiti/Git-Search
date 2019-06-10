@@ -9,12 +9,14 @@ import { LandpageComponent } from './landpage/landpage.component';
 import {RoutingModule} from './routing/routing.module';
 import { GitserviceService } from './gitservice.service';
 import { from } from 'rxjs';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandpageComponent
+    LandpageComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

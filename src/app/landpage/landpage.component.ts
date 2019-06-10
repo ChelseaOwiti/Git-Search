@@ -2,7 +2,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { GitserviceService } from '../gitservice.service';
 import { HttpClient } from '@angular/common/http';
 import {User} from '../user';
-import {Repos} from '../repo';
+import {Repo} from '../repo';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -30,7 +30,7 @@ export class LandpageComponent implements OnInit {
       this.data= data;
     });
     this.gitserviceservice.getRepo('ChelseaOwiti').subscribe(repo =>{
-      this.repo = repo;
+      this.repo= repo;
       
     });
   }
@@ -43,7 +43,7 @@ export class LandpageComponent implements OnInit {
 
     });
     this.gitserviceservice.getRepo("").subscribe(repo =>{
-      console.log(repo);
+      console.log(Repo);
       this.repo = repo;
 
     })
