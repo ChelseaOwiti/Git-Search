@@ -1,8 +1,8 @@
-export class Repo {
+export class Repos {
   constructor(
     public name: string,
     public html_url: string,
     public description: string,
-    public langauge: string,
+    
   ){}
 }
